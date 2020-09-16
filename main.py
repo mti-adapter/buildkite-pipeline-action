@@ -94,7 +94,7 @@ def trigger_pipeline(context: ActionContext) -> dict:
         "author": context.author,
         "env": context.env
     }
-    print(f"🚧   {urll}")
+    print(f"🚧   {url}")
     print(f"🚧   {headers}")
     print(f"🚧   {payload}")
     if context.pull_request:
