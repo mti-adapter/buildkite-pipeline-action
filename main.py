@@ -94,6 +94,9 @@ def trigger_pipeline(context: ActionContext) -> dict:
         "author": context.author,
         "env": context.env
     }
+    print(f"🚧   {urll}")
+    print(f"🚧   {headers}")
+    print(f"🚧   {payload}")
     if context.pull_request:
         payload["pull_request_base_branch"] = context.pull_request.base_branch
         payload["pull_request_id"] = context.pull_request.number
